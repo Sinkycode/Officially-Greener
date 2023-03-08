@@ -9,7 +9,7 @@
 }
 
 html, body {
-  font-family: 'effra', roboto;
+  font-family: rubik;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -64,6 +64,12 @@ header {
   /* border: 1px solid red; */
 }
 
+@media (min-width: 836px) {
+  header {
+
+  }
+}
+
 .nav-list {
   display: flex;
   gap: 3rem;
@@ -80,6 +86,10 @@ header > *:last-child {
   border-radius: 6px;
   text-transform: uppercase;
   font-size: 14px;
+}
+
+.hamburger {
+  display: none;
 }
 
 #landing-page {
@@ -195,6 +205,10 @@ header > *:last-child {
   margin-bottom: 2rem;
 }
 
+.fa-sharp {
+  font-size: 1.6rem;
+}
+
 .phone-logo {
   max-width: 40px;
 }
@@ -254,6 +268,10 @@ header > *:last-child {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 7px;
+}
+
+.mockup-gallery span {
+  font-weight: bold;
 }
 
 /* .phone2 {
