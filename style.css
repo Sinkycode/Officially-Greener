@@ -185,6 +185,7 @@ header > *:last-child {
   border-radius: 18px;
   padding-block: 2rem;
   box-shadow: 0px 100px 28px rgba(0, 0, 0, 0.047);
+  opacity: 0;
 }
 
 .mockup .navigation {
@@ -346,7 +347,7 @@ footer .side2 {
 }
 
 .phone1.load {
-  animation: fade-in 3s forwards;
+  animation: fade-in 2s forwards 2s;
 }
 .phone2.load {
   animation: slide-up 3s forwards;
@@ -365,6 +366,7 @@ footer .side2 {
     transform: translateY(100%);
   }
   100% {
-    transform: translateY(30%);;
+    transform: translateY(30%);
+    opacity: 100%;
   }
 }
