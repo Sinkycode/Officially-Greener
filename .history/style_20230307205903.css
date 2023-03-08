@@ -1,0 +1,93 @@
+:root {
+
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'effra';
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* CUSTOMIZATION */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button, input {
+  outline: none;
+  border: none;
+  /* background: transparent; */
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+ul, p {
+  margin: 0;
+  list-style: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,h2,h3 {
+  font-family: 'DM Serif Display';
+  margin: 0;
+}
+
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 1rem;
+  /* border: 1px solid red; */
+}
+
+.nav-list {
+  display: flex;
+  gap: 3rem;
+}
+
+/* .nav-btn {
+  background-color: rgb(19, 212, 125);
+  color: white;
+  padding: .6rem 2.5rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+} */
+
+header > *:last-child {
+  margin-left: auto;
+}
+
+.btn {
+  background-color: rgb(19, 212, 125);
+  color: white;
+  padding: .5rem 2rem;
+  border-radius: 6px;
+}
+
+#landing-page .container {
+  border: 1px solid red;
+  height: calc(100vh - 5rem);
+}
