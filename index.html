@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" type="image/png" sizes="32x32" href="./Logo/officially logo mobile.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Logo/officially logo mobile.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Officially Greener</title>
 </head>
@@ -75,7 +78,7 @@
             <div class="wrapper">
               <h1 class="mockup-big-txt">Inspiring Stories</h1>
               <div class="gallery">
-                <img src="Images/Julianas story.jpg" class="main-image" alt="">
+                <img src="images/Julianas story.jpg" class="main-image" alt="">
               </div>
               <span>Julianas story on how she saved her family</span>
             </div>
@@ -88,7 +91,7 @@
   <footer>
     <div class="container">
       <div class="side1">
-        <img src="Logo/Officially Greener Transparent background.png" alt="" class="footer-logo logo">
+        <img src="logo/Officially Greener Transparent background.png" alt="" class="footer-logo logo">
         <p class="landing-page__gray-para">&copy; copyright Officially Greener</p>
       </div>
       <div class="side2">
@@ -107,5 +110,15 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const phone1 = document.querySelector('.phone1');
+    const phone2 = document.querySelector('.phone2');
+    window.addEventListener('load', (event) => {
+      phone1.classList.add('load');
+      phone2.classList.add('load');
+    });
+    console.log(phone1)
+  </script>
 </body>
 </html>
