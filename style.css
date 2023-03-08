@@ -144,7 +144,7 @@ header > *:last-child {
 
 @media (min-width: 1300px) {
   .landing-page__big-txt {
-    width: 80%;
+    width: 90%;
   }
 }
 
