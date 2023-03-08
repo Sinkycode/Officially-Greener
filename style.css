@@ -9,7 +9,7 @@
 }
 
 html, body {
-  font-family: 'effra';
+  font-family: 'effra', roboto;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -84,8 +84,31 @@ header > *:last-child {
 
 #landing-page {
   background-color:hsl(0, 0%, 99%);
-  /* height: 112vh;
-  overflow: hidden; */
+}
+
+@media (min-width: 1936px) {
+  #landing-page {
+    /* border: 1px solid red; */
+    padding-inline: 10rem;
+    padding-block-start: 2rem;
+  }
+
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  header {
+    z-index: 100;
+  }
+
+  .mockup::before {
+    display: none;
+  }
+
+  .phone2 {
+    transform: translateY(0%) !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -140,8 +163,8 @@ header > *:last-child {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  overflow-y: hidden;
-  z-index: 2;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .mockup::before {
@@ -232,9 +255,9 @@ header > *:last-child {
   border-radius: 7px;
 }
 
-.phone2 {
+/* .phone2 {
   transform: translateY(30%);
-}
+} */
 
 .phone2 .gallery {
   height: 250px;
@@ -322,3 +345,26 @@ footer .side2 {
   font-weight: bold;
 }
 
+.phone1.load {
+  animation: fade-in 3s forwards;
+}
+.phone2.load {
+  animation: slide-up 3s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(30%);;
+  }
+}
